@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="810.5" height="780.919" viewBox="0 0 810.5 780.919">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_126" data-name="Rectangle 126" width="810.5" height="780.919" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="calendar-decor" transform="translate(-253.876 -27.644)">
+    <g id="Group_150" data-name="Group 150" transform="translate(253.876 27.644)" clip-path="url(#clip-path)">
+      <path id="Path_1353" data-name="Path 1353" d="M826.12,662.34H665.805l-27.22-27.22-.149-.267A119.069,119.069,0,0,1,658.1,493.023l60.511-60.173h0l0,0,3.127,3.135a86.353,86.353,0,0,0,0,121.981Zm-158.48-4.428H815.431l-96.821-96.821a90.842,90.842,0,0,1-16.567-105.526l-40.82,40.593A114.631,114.631,0,0,0,642.15,632.422Z" transform="translate(-113.065 126.75)" fill="#fff"/>
+      <path id="Path_1354" data-name="Path 1354" d="M673.705,799.339l-85.674-85.674a90.783,90.783,0,0,1,0-128.243L1141.337,32.115V192.323l-.646.648L684.817,648.844A114.622,114.622,0,0,0,665.891,785.38ZM1136.91,42.806,591.161,588.554a86.353,86.353,0,0,0,0,121.98l65.019,65.02a119.166,119.166,0,0,1,25.5-129.84L1136.91,190.489Z" transform="translate(-136.656 -25.941)" fill="#a95939"/>
+    </g>
+  </g>
+</svg>

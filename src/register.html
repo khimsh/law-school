@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+  @@include('html/head.html', { "title": "ავტორიზაცია / რეგისტრაცია" })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <div class="container">
+        <div class="forms">
+          <div class="form">
+            <h2>ავტორიზაცია</h2>
+
+            <form action="#">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="მომხმარებლის სახელი"
+              />
+
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="პაროლი"
+              />
+
+              <a href="#">პაროლის აღდგენა</a>
+
+              <button type="submit">ავტორიზაცია</button>
+            </form>
+          </div>
+
+          <div class="form">
+            <h2>რეგისტრაცია</h2>
+
+            <form action="#">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="მომხმარებლის სახელი"
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="ტელეფონი"
+              />
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="ელ.ფოსტა"
+              />
+
+              <input
+                type="text"
+                name="idNumber"
+                id="idNumber"
+                placeholder="პირადი ნომერი"
+              />
+
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="პაროლი"
+              />
+
+              <input
+                type="password"
+                name="password2"
+                id="password2"
+                placeholder="პაროლის დადასტურება"
+              />
+
+              <label for="terms">
+                <input type="checkbox" name="terms" id="terms" />
+                ვეთანხმები წესებს და პირობებს
+              </label>
+
+              <label for="personalInfo">
+                <input type="checkbox" name="personalInfo" id="personalInfo" />
+                თანხმობა პერსონალური ინფორმაციის დამუშავებაზე
+              </label>
+
+              <button type="submit">რეგისტრაცია</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html', {})
+  </body>
+</html>

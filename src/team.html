@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+  @@include('html/head.html', { "title": "ჩვენი გუნდი" })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <div class="container">
+        <div class="team">
+          <h1>ჩვენი გუნდი</h1>
+
+          <div class="team__grid">
+            <div class="team__member lecturer">
+              <a href="#" class="lecturer__link">
+                <figure class="lecturer__img">
+                  <img src="@img/program-img-1.jpg" alt="" />
+                </figure>
+                <h2 class="lecturer__name">ქეთი მესხიშვილი</h2>
+                <p class="lecturer__status">ლექტორი</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html', {})
+  </body>
+</html>

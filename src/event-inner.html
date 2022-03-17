@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ka">
+  @@include('html/head.html', { "title": "ღონისძიებები" })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <div class="container">
+        <div class="events">
+          <h1>ღონისძიებები</h1>
+
+          <div class="event">
+            <a href="#" class="event__link">
+              <figure class="event__img">
+                <img src="@img/program-img-1.jpg" alt="" />
+                <div class="event__date">16 იან</div>
+              </figure>
+
+              <div class="event__body">
+                <header class="event__heading">
+                  <div class="event__posted-on">17.01.2022</div>
+
+                  <h2 class="event__title">
+                    ღონისძიების სათაური, შემთხვევითად გენერირებული
+                  </h2>
+                </header>
+
+                <p class="event__desc">
+                  შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                  ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად
+                  მიახლოებული შაბლონი წარუდგინონ შემფასებელს...
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html', {})
+  </body>
+</html>

@@ -1,0 +1,108 @@
+.calendar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .section-title {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__left {
+    background-image: url(../img/calendar-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__right {
+    padding-top: 212px;
+    padding-bottom: 164px;
+    padding-left: 30px;
+    background-color: #003b56;
+    background-image: url(../img/calendar-decor.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__program {
+  }
+}
+.program-calendar {
+  max-width: calc((86.125rem / 2) - 30px);
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 30px;
+    color: hsl(0 0% 100%);
+  }
+
+  &__date {
+    margin-bottom: 16px;
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 30px;
+    color: #ff9a67;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #ffffff;
+
+    span {
+      font-family: firaGo, sans-serif;
+      font-size: 20px;
+    }
+  }
+
+  &__schedule {
+    margin: 27px 0 23px;
+    padding: 0;
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      color: #ff9a67;
+
+      &::before {
+        content: '\00B7';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        font-size: 48px;
+        color: #ff9a67;
+      }
+    }
+  }
+
+  &__lecturer {
+    font-family: firaGo, sans-serif;
+    font-size: 20px;
+    color: hsl(0 0% 100%);
+  }
+
+  &__desc {
+    margin-top: 30px;
+    padding-top: 40px;
+    font-family: firaGo, sans-serif;
+    font-size: 18px;
+    color: hsl(0 0% 100%);
+    border-top: 1px solid #ececec;
+  }
+
+  &__btn {
+    margin-top: 54px;
+    width: 210px;
+    height: 50px;
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 16px;
+    color: hsl(0 0% 100%);
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid hsl(0 0% 100%);
+  }
+}
