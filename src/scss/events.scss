@@ -176,6 +176,10 @@
     font-size: 18px;
     color: hsl(0 0% 0%);
 
+    & > * {
+      font-size: 18px;
+    }
+
     & > * + * {
       margin-top: 20px;
     }
