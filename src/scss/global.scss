@@ -358,3 +358,29 @@ body {
   background-repeat: no-repeat;
   background-position: top right;
 }
+
+.tab-content {
+  padding: 46px 40px;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: calc(100% + 5px);
+  padding: 4px 8px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  background-color: hsl(0 0% 100%);
+  border: 5px;
+  box-shadow: 0 2px 2px hsl(0 0% 0% / 0.16);
+  transition: all 150ms ease-in-out;
+
+  transform-origin: left;
+  transform: scale(0);
+  opacity: 0;
+
+  &--success {
+    color: #04ae15;
+  }
+}

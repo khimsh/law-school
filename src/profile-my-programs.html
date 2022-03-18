@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ka">
+  @@include('html/head.html', { "title": "პროფილი | ჩემი პროგრამები" })
+  <body>
+    @@include('html/header.html', {})
+    <main class="programs-decor">
+      <div class="container">
+        <div class="profile">
+          <header class="profile__heading">
+            <div class="profile__user user-profile">
+              <div class="user-profile__name">ნინო ნატროშვილი</div>
+              <div class="user-profile__phone">
+                <a href="tel:+995 599 50 11 07">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+995 599 50 11 07</span>
+                </a>
+              </div>
+              <div class="user-profile__email">
+                <a href="mailto:">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>nina@proservice.ge</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="profile__navigation">
+              <ul class="profile__tabs">
+                <li>
+                  <button data-tab-target="#my-programs">
+                    ჩემი პროგრამები
+                  </button>
+                </li>
+                <li>
+                  <button data-tab-target="#my-files">სასწავლო მასალა</button>
+                </li>
+              </ul>
+
+              <div class="profile__actions">
+                <button>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>პროფილის რედაქტირება</span>
+                </button>
+
+                <a href="#">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <span>სიტსტემიდან გასვლა</span>
+                </a>
+              </div>
+            </div>
+          </header>
+
+          <div class="profile__body">
+            <div class="tab-content">
+              <div id="my-programs" data-tab-content>
+                <div class="detailed-program">
+                  <figure class="detailed-program__img">
+                    <img src="@img/program-img-1.jpg" alt="" />
+                  </figure>
+
+                  <div class="detailed-program__body">
+                    <h2 class="detailed-program__title">
+                      სამართლის საბაკალავრო პროგრამა
+                    </h2>
+
+                    <div class="detailed-program__info">
+                      პროგრამა განკუთვნილია: იურიდიული ფაკულტეტის
+                      სტუდენტებისთვის
+                    </div>
+
+                    <div class="detailed-program__time">
+                      <p>03.02.2022 - 03.06.2022</p>
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>03.02.2022 - 03.06.2022</span>
+                      </div>
+                    </div>
+
+                    <ul class="detailed-program__schedule">
+                      <li>ორშაბათი</li>
+                      <li>ოთხშაბათი</li>
+                      <li>პარასკევი</li>
+                    </ul>
+
+                    <div class="detailed-program__lecturer">
+                      ლექტორი: ქეთი მესხიშვილი
+                    </div>
+
+                    <footer class="detailed-program__footer">
+                      <div class="detailed-program__price">
+                        პროგრამის ღირებულბება: 1399 ₾
+                      </div>
+
+                      <div class="detailed-program__invoice invoice">
+                        <!-- გადაუხდელის შემთხვევაში .paid კლასი არ ჭირდება -->
+                        <div class="invoice__icon paid">
+                          <i class="fa-solid fa-file-invoice"></i>
+
+                          <div class="tooltip tooltip--success">გადახდილია</div>
+                        </div>
+
+                        <a href="#" download="#" class="invoice__link"
+                          >ინვოისის ჩამოტვირთვა</a
+                        >
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              <div id="my-files" data-tab-content>
+                <div class="file">
+                  <div class="file__desc">
+                    <h2>
+                      შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                      ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად
+                      მიახლოებული შაბლონი წარუდგინონ შემფასებელს.
+                    </h2>
+                  </div>
+
+                  <div class="file__actions">
+                    <h3>ფაილის ჩამოტვირთვა</h3>
+
+                    <div class="file__list">
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="file">
+                  <div class="file__desc">
+                    <h2>
+                      შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                      ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად
+                      მიახლოებული შაბლონი წარუდგინონ შემფასებელს.
+                    </h2>
+                  </div>
+
+                  <div class="file__actions">
+                    <h3>ფაილის ჩამოტვირთვა</h3>
+
+                    <div class="file__list">
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    @@include('html/footer.html', {})
+  </body>
+</html>
