@@ -840,9 +840,7 @@ body {
   display: grid;
   -ms-grid-columns: (minmax(0, 1fr))[3];
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  -moz-column-gap: 50px;
-       column-gap: 50px;
-  row-gap: 50px;
+  gap: 50px;
 }
 
 .programs .program:hover {
@@ -1181,6 +1179,60 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 58px;
+}
+
+.team__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[4];
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.team__title {
+  margin-bottom: 25px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.lecturer {
+  transition: transform 150ms ease-in-out;
+}
+
+.lecturer:hover {
+  transform: scale(1.06);
+}
+
+.lecturer__img {
+  margin-bottom: 25px;
+  width: 100%;
+  aspect-ratio: 2/2.5;
+  border-radius: 5px;
+  overflow: clip;
+}
+
+.lecturer__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.lecturer__name {
+  margin-bottom: 10px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lecturer__status {
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 16px;
+  color: #dc7947;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .footer {
