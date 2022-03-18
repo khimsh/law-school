@@ -835,6 +835,66 @@ body {
   border: 1px solid #003b56;
 }
 
+.programs__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[3];
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
+}
+
+.programs .program:hover {
+  transform: scale(1.06);
+}
+
+.programs__heading {
+  display: flex;
+  gap: 30px;
+}
+
+.programs__filters {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.programs__title {
+  position: relative;
+  padding-top: 25px;
+  margin-bottom: 40px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.programs__title::before,
+.programs__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.programs__title::before {
+  width: 100%;
+  height: 3px;
+  background-color: #ececec;
+}
+
+.programs__title::after {
+  width: 110px;
+  height: 3px;
+  background-color: #003b56;
+}
+
+.programs-decor {
+  padding-block: 50px;
+  background: url(../img/programs-decor-top.svg) no-repeat right top, url(../img/decor-bottom.svg) no-repeat left bottom;
+}
+
 .calendar {
   position: relative;
   display: -ms-grid;
