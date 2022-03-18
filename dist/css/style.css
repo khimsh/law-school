@@ -18,6 +18,7 @@
 
 :root {
   --box-shadow: 0 3px 6px hsl(0 0% 0% / 0.16);
+  --box-shadow-500: 0 2px 28px hsl(0 0% 0% / 0.22);
 }
 
 /* Reset */
@@ -1109,7 +1110,13 @@ body {
 }
 
 .event-card {
+  background-color: white;
   box-shadow: var(--box-shadow);
+  transition: transform 200ms ease-in-out;
+}
+
+.event-card:hover {
+  transform: scale(1.06);
 }
 
 .event-card__img {
@@ -1193,6 +1200,102 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 58px;
+}
+
+.events__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 1fr))[4];
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.event {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 645px 1fr;
+  grid-template-columns: 645px 1fr;
+}
+
+.event__img {
+  position: relative;
+  height: 514px;
+}
+
+.event__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.event__date {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-inline: 15px;
+  width: 150px;
+  height: 150px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+  background-color: #003b56;
+}
+
+.event__body {
+  padding: 30px 46px;
+  background-color: white;
+  box-shadow: var(--box-shadow-500);
+}
+
+.event__heading {
+  margin-bottom: 15px;
+}
+
+.event__posted-on {
+  position: relative;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 20px;
+  color: #003b56;
+}
+
+.event__posted-on span {
+  position: relative;
+  padding-right: 15px;
+  background-color: white;
+  z-index: 3;
+}
+
+.event__posted-on::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background-color: #d5d5d5;
+}
+
+.event__title {
+  margin-bottom: 5px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+}
+
+.event__desc {
+  font-family: firaGo, sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.event__desc > * + * {
+  margin-top: 20px;
 }
 
 .team__grid {
