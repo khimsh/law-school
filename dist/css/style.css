@@ -318,6 +318,20 @@ body {
   background-color: #dc7947;
 }
 
+.backlink {
+  margin-top: 40px;
+}
+
+.backlink__link {
+  padding: 12px 32px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 16px;
+  color: white;
+  background-color: #003b56;
+  border-radius: 5px;
+  box-shadow: 0 2px 28px rgba(0, 0, 0, 0.22);
+}
+
 .section-title {
   position: relative;
   padding-top: 47px;
@@ -1193,6 +1207,7 @@ body {
   margin-bottom: 25px;
   font-family: mrgvlovaniCaps, sans-serif;
   font-size: 20px;
+  font-weight: 400;
   color: black;
   text-transform: uppercase;
 }
@@ -1222,6 +1237,7 @@ body {
   margin-bottom: 10px;
   font-family: mrgvlovaniCaps, sans-serif;
   font-size: 18px;
+  font-weight: 400;
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -1233,6 +1249,83 @@ body {
   color: #dc7947;
   text-align: center;
   text-transform: uppercase;
+}
+
+.team-member {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 383px;
+  grid-template-columns: 1fr 383px;
+  gap: 30px;
+}
+
+.team-member__content {
+  padding: 20px 30px;
+  background-color: white;
+  box-shadow: 0 2px 28px rgba(0, 0, 0, 0.22);
+}
+
+.team-member__heading {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.team-member__name {
+  margin-bottom: 8px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+}
+
+.team-member__status {
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 16px;
+  color: #dc7947;
+  text-transform: uppercase;
+}
+
+.team-member__social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.team-member__social a {
+  color: #003b56;
+  font-size: 20px;
+  transition: color 150ms ease-in-out;
+}
+
+.team-member__social a:hover {
+  color: #dc7947;
+}
+
+.team-member__body {
+  font-family: firaGo, sans-serif;
+  font-size: 18px;
+}
+
+.team-member__body > * + * {
+  margin-top: 20px;
+}
+
+.team-member__img {
+  border-radius: 5px;
+  overflow: clip;
+  box-shadow: 0 2px 28px rgba(0, 0, 0, 0.22);
+}
+
+.team-member__img img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {

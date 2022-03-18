@@ -230,6 +230,20 @@ body {
   }
 }
 
+.backlink {
+  margin-top: 40px;
+
+  &__link {
+    padding: 12px 32px;
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 16px;
+    color: hsl(0 0% 100%);
+    background-color: #003b56;
+    border-radius: 5px;
+    box-shadow: 0 2px 28px hsl(0 0% 0% / 0.22);
+  }
+}
+
 .section-title {
   position: relative;
   padding-top: 47px;
