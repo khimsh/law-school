@@ -1,0 +1,41 @@
+.about {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 500px;
+  gap: 40px;
+  background-color: hsl(0 0% 100%);
+  box-shadow: var(--box-shadow-500);
+
+  &__content {
+    & > * + * {
+      margin-top: 20px;
+    }
+
+    p {
+      font-family: firaGo, sans-serif;
+      font-size: 18px;
+      color: hsl(0 0% 0%);
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(0 0% 0%);
+    text-transform: uppercase;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+}
