@@ -75,10 +75,10 @@
 
     <ul class="header__auth auth-header">
       <li class="auth-header__item">
-        <a href="#" class="auth-header__link">რეგისტრაცია</a>
+        <a href="register.html" class="auth-header__link">რეგისტრაცია</a>
       </li>
       <li class="auth-header__item">
-        <a href="#" class="auth-header__link active">ავტორიზაცია</a>
+        <a href="register.html" class="auth-header__link active">ავტორიზაცია</a>
       </li>
     </ul>
 
@@ -104,11 +104,11 @@
   </div>
 </header>
 
-    <main>
+    <main class="programs-decor">
       <div class="container">
         <div class="forms">
           <div class="form">
-            <h2>ავტორიზაცია</h2>
+            <h2 class="form__title form__title--orange">ავტორიზაცია</h2>
 
             <form action="#">
               <input
@@ -125,14 +125,14 @@
                 placeholder="პაროლი"
               />
 
-              <a href="#">პაროლის აღდგენა</a>
+              <a href="#" class="form__recover-pass">პაროლის აღდგენა</a>
 
               <button type="submit">ავტორიზაცია</button>
             </form>
           </div>
 
           <div class="form">
-            <h2>რეგისტრაცია</h2>
+            <h2 class="form__title form__title--blue">რეგისტრაცია</h2>
 
             <form action="#">
               <input
@@ -177,15 +177,18 @@
                 placeholder="პაროლის დადასტურება"
               />
 
-              <label for="terms">
+              <div class="form__checkbox">
                 <input type="checkbox" name="terms" id="terms" />
-                ვეთანხმები წესებს და პირობებს
-              </label>
+                <label for="terms"> ვეთანხმები წესებს და პირობებს </label>
+              </div>
 
-              <label for="personalInfo">
+              <div class="form__checkbox">
                 <input type="checkbox" name="personalInfo" id="personalInfo" />
-                თანხმობა პერსონალური ინფორმაციის დამუშავებაზე
-              </label>
+
+                <label for="personalInfo">
+                  თანხმობა პერსონალური ინფორმაციის დამუშავებაზე
+                </label>
+              </div>
 
               <button type="submit">რეგისტრაცია</button>
             </form>

@@ -2312,6 +2312,145 @@ body {
   background-color: black;
 }
 
+.forms {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.form__title {
+  margin-bottom: 34px;
+  padding-block: 10px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.form__title--orange {
+  background-color: #dc7947;
+}
+
+.form__title--blue {
+  background-color: #003b56;
+}
+
+.form form {
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-500);
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=password],
+.form input[type=tel] {
+  padding-inline: 15px;
+  height: 50px;
+  font-family: firaGo, sans-serif;
+  font-size: 15px;
+  border: 1px solid #707070;
+  border-radius: 5px;
+}
+
+.form input[type=text]::-moz-placeholder, .form input[type=email]::-moz-placeholder, .form input[type=password]::-moz-placeholder, .form input[type=tel]::-moz-placeholder {
+  font-family: inherit;
+  color: #828282;
+}
+
+.form input[type=text]:-ms-input-placeholder, .form input[type=email]:-ms-input-placeholder, .form input[type=password]:-ms-input-placeholder, .form input[type=tel]:-ms-input-placeholder {
+  font-family: inherit;
+  color: #828282;
+}
+
+.form input[type=text]::placeholder,
+.form input[type=email]::placeholder,
+.form input[type=password]::placeholder,
+.form input[type=tel]::placeholder {
+  font-family: inherit;
+  color: #828282;
+}
+
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=password]:focus,
+.form input[type=tel]:focus {
+  outline-color: #dc7947;
+}
+
+.form label {
+  font-family: firaGo, sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.form button {
+  height: 50px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  background-color: #003b56;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 150ms ease-in-out;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #dc7947;
+}
+
+.form__recover-pass {
+  font-family: firaGo, sans-serif;
+  font-size: 12px;
+  color: #003b56;
+}
+
+.form__checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.form__checkbox input[type=checkbox] {
+  display: none;
+}
+
+.form__checkbox input[type=checkbox]:checked + label::before {
+  background-color: #dc7947;
+  border-color: transparent;
+}
+
+.form__checkbox label {
+  position: relative;
+  padding-left: 28px;
+}
+
+.form__checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #707070;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
