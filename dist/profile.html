@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>პროფილი | ჩემი პროგრამები</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/style.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="files/css/all.min.css" />
+
+  <script src="js/app.min.js" defer></script>
+</head>
+
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__logo">
+      <a href="index.html">
+        <img src="img/Logo.svg" alt="logo" />
+      </a>
+    </div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item dropdown" data-dropdown>
+          <button>ჩვენ შესახებ</button>
+
+          <ul class="nav__dropdown dropdown-nav" data-dropdown-content>
+            <li class="dropdown-nav__item">
+              <a href="about.html" class="dropdown-nav__link"
+                >კომპანიის შესახებ</a
+              >
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#" class="dropdown-nav__link">leadership</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="team.html" class="dropdown-nav__link">ჩვენი გუნდი</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#" class="dropdown-nav__link">პროექტები</a>
+            </li>
+            <li class="dropdown-nav__item">
+              <a href="#" class="dropdown-nav__link"
+                >საერთაშორისო თანამშრომლობა</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <a href="programs.html" class="nav__link">პროგრამები</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="events.html" class="nav__link">ღონისძიებები</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">მედია</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="faq.html" class="nav__link">faq</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="contact.html" class="nav__link">კონტაქტი</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="header__auth auth-header">
+      <li class="auth-header__item">
+        <a href="#" class="auth-header__link">რეგისტრაცია</a>
+      </li>
+      <li class="auth-header__item">
+        <a href="#" class="auth-header__link active">ავტორიზაცია</a>
+      </li>
+    </ul>
+
+    <div class="header__lang lang-header dropdown" data-dropdown>
+      <button class="lang-header__btn">
+        <span>GE</span>
+        <i class="fa-solid fa-caret-down"></i>
+      </button>
+
+      <ul class="lang-header__list" data-dropdown-content>
+        <li class="lang-header__item">
+          <button class="lang-header__option">GE</button>
+        </li>
+        <li class="lang-header__item">
+          <button class="lang-header__option">EN</button>
+        </li>
+      </ul>
+    </div>
+
+    <button class="header__btn">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+    <main class="programs-decor">
+      <div class="container">
+        <div class="profile">
+          <header class="profile__heading">
+            <div class="profile__user user-profile">
+              <div class="user-profile__name">ნინო ნატროშვილი</div>
+              <div class="user-profile__phone">
+                <a href="tel:+995 599 50 11 07">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>+995 599 50 11 07</span>
+                </a>
+              </div>
+              <div class="user-profile__email">
+                <a href="mailto:">
+                  <i class="fa-solid fa-envelope"></i>
+                  <span>nina@proservice.ge</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="profile__navigation">
+              <ul class="profile__tabs">
+                <li>
+                  <button data-tab-target="#my-programs">
+                    ჩემი პროგრამები
+                  </button>
+                </li>
+                <li>
+                  <button data-tab-target="#my-files">სასწავლო მასალა</button>
+                </li>
+              </ul>
+
+              <div class="profile__actions">
+                <button>
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <span>პროფილის რედაქტირება</span>
+                </button>
+
+                <a href="#">
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <span>სიტსტემიდან გასვლა</span>
+                </a>
+              </div>
+            </div>
+          </header>
+
+          <div class="profile__body">
+            <div class="tab-content">
+              <div id="my-programs" data-tab-content>
+                <div class="detailed-program">
+                  <figure class="detailed-program__img">
+                    <img src="img/program-img-1.jpg" alt="" />
+                  </figure>
+
+                  <div class="detailed-program__body">
+                    <h2 class="detailed-program__title">
+                      სამართლის საბაკალავრო პროგრამა
+                    </h2>
+
+                    <div class="detailed-program__info">
+                      პროგრამა განკუთვნილია: იურიდიული ფაკულტეტის
+                      სტუდენტებისთვის
+                    </div>
+
+                    <div class="detailed-program__time">
+                      <p>03.02.2022 - 03.06.2022</p>
+                      <div>
+                        <i class="fa-regular fa-clock"></i>
+                        <span>03.02.2022 - 03.06.2022</span>
+                      </div>
+                    </div>
+
+                    <ul class="detailed-program__schedule">
+                      <li>ორშაბათი</li>
+                      <li>ოთხშაბათი</li>
+                      <li>პარასკევი</li>
+                    </ul>
+
+                    <div class="detailed-program__lecturer">
+                      ლექტორი: ქეთი მესხიშვილი
+                    </div>
+
+                    <footer class="detailed-program__footer">
+                      <div class="detailed-program__price">
+                        პროგრამის ღირებულბება: 1399 ₾
+                      </div>
+
+                      <div class="detailed-program__invoice invoice">
+                        <!-- გადაუხდელის შემთხვევაში .paid კლასი არ ჭირდება -->
+                        <div class="invoice__icon paid">
+                          <i class="fa-solid fa-file-invoice"></i>
+
+                          <div class="tooltip tooltip--success">გადახდილია</div>
+                        </div>
+
+                        <a href="#" download="#" class="invoice__link"
+                          >ინვოისის ჩამოტვირთვა</a
+                        >
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+
+              <div id="my-files" data-tab-content>
+                <div class="file">
+                  <div class="file__desc">
+                    <h2>
+                      შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                      ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად
+                      მიახლოებული შაბლონი წარუდგინონ შემფასებელს.
+                    </h2>
+                  </div>
+
+                  <div class="file__actions">
+                    <h3>ფაილის ჩამოტვირთვა</h3>
+
+                    <div class="file__list">
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="file">
+                  <div class="file__desc">
+                    <h2>
+                      შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                      ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად
+                      მიახლოებული შაბლონი წარუდგინონ შემფასებელს.
+                    </h2>
+                  </div>
+
+                  <div class="file__actions">
+                    <h3>ფაილის ჩამოტვირთვა</h3>
+
+                    <div class="file__list">
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                      <a href="#" download>
+                        <i class="fa-regular fa-file"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+  <div class="footer__main">
+    <div class="container">
+      <div class="footer__row">
+        <div class="footer__col">
+          <div class="footer__logo">
+            <img src="img/Logo-footer.svg" alt="placeholder" />
+          </div>
+
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                target="_blank"
+                class="social__link"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <ul class="footer__list list-footer">
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">სკოლის შესახებ</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="programs.html" class="list-footer__link">პროგრამები</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="events.html" class="list-footer__link">ღონისძიებები</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">მედია</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">FAQ</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">პარტნიორები</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">ციფრული სკოლა </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <ul class="footer__list list-footer">
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">ონლაინ ბიბლიოთეკა</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link"
+                >სასამართლო გადაწყვეტილებები</a
+              >
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link"
+                >სასამართლო სტატისტიკის მოდული
+              </a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">ანბანური ენციკლოპედია </a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">სასწავლო კალენდარი</a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">პროფესიული ახალი ამბები </a>
+            </li>
+            <li class="list-footer__item">
+              <a href="#" class="list-footer__link">მედია ცენტრი</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <address class="footer__address address-footer">
+            <h2 class="address-footer__heading">კონტაქტი</h2>
+
+            <ul class="address-footer__list">
+              <li class="address-footer__item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>
+                  პეტრე ქავთარაძის, ქ. ჩიხი N 3 <br />
+                  თბილისი 0186, საქართველო
+                </p>
+              </li>
+              <li class="address-footer__item">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+99599256787">+995 99 256787</a>
+              </li>
+              <li class="address-footer__item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:info@isol.ge">info@isol.ge</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer__subscribe subscribe">
+        <h2 class="subscribe__title">სიახლის გამოწერა:</h2>
+
+        <form action="#" class="subscribe__form">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ელ.ფოსტა"
+            required
+          />
+          <button type="submit">გამოწერა</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div>2022 Innovative school of law</div>
+      <div>
+        created by
+        <a href="#" target="_blank" rel="noopener noreferrer">proservice</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
