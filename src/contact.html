@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ka">
+  @@include('html/head.html', { "title": "კონტაქტი" })
+  <body>
+    @@include('html/header.html', {})
+    <div class="banner">
+      <div class="container">
+        <h1 class="banner__title">კონტაქტი</h1>
+      </div>
+    </div>
+
+    <main class="news-decor">
+      <div class="container">
+        <div class="contact">
+          <h2 class="contact__title">დაგვიკავშირდით</h2>
+
+          <div class="contact__wrapper">
+            <form action="#" class="contact__form">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="სახელი, გვარი"
+              />
+
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="ელ.ფოსტა"
+              />
+
+              <input type="tel" name="tel" id="tel" placeholder="ტელეფონი" />
+
+              <textarea
+                name="message"
+                id="message"
+                placeholder="შეტყობინება"
+              ></textarea>
+
+              <div class="contact__footer">
+                <button type="submit">გაგზავნა</button>
+
+                <div class="contact__social">
+                  <h2 class="contact__title-2">გამოგვყევით:</h2>
+
+                  <ul>
+                    <li>
+                      <a
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="http://"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+
+            <div class="contact__address address">
+              <ul class="address__list">
+                <li class="address__item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>
+                    პეტრე ქავთარაძის, ქ. ჩიხი N 3 თბილისი 0186 <br />
+                    საქართველო
+                  </p>
+                </li>
+                <li class="address__item">
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+99599256787">+995 99 256787</a>
+                </li>
+                <li class="address__item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <a href="mailto:info@isol.ge">info@isol.ge</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="map"></div>
+
+    @@include('html/footer.html', {})
+  </body>
+</html>
