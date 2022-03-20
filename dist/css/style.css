@@ -2308,6 +2308,10 @@ body {
   gap: 15px;
 }
 
+.tab-content {
+  min-height: 60vh;
+}
+
 .footer {
   padding-block: 60px 20px;
   background-color: #003b56;
@@ -2804,6 +2808,14 @@ body {
 [data-dropdown].active [data-dropdown-content] {
   opacity: 1;
   transform: scaleY(1);
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
 }
 
 .modal {

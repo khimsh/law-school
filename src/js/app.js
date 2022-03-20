@@ -61,17 +61,39 @@ function closeDropdown(dropdown) {
 }
 
 // modal
-const modal = document.querySelector('[data-modal]');
-const backdrop = modal.querySelector('.modal__backdrop');
-const openModal = document.querySelector('[data-modal-open]');
-const closeModal = document.querySelector('[data-modal-close]');
+if (document.querySelector('[data-modal]')) {
+  const modal = document.querySelector('[data-modal]');
+  const backdrop = modal.querySelector('.modal__backdrop');
+  const openModal = document.querySelector('[data-modal-open]');
+  const closeModal = document.querySelector('[data-modal-close]');
 
-openModal.addEventListener('click', () => {
-  modal.classList.add('active');
-});
-closeModal.addEventListener('click', () => {
-  modal.classList.remove('active');
-});
-backdrop.addEventListener('click', () => {
-  modal.classList.remove('active');
-});
+  openModal.addEventListener('click', () => {
+    modal.classList.add('active');
+  });
+  closeModal.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+  backdrop.addEventListener('click', () => {
+    modal.classList.remove('active');
+  });
+}
+
+// tabs
+if (document.querySelectorAll('[data-tab-target]')) {
+  const tabs = document.querySelectorAll('[data-tab-target]');
+  const tabContents = document.querySelectorAll('[data-tab-content]');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const target = document.querySelector(tab.dataset.tabTarget);
+      tabContents.forEach((tabContent) => {
+        tabContent.classList.remove('active');
+      });
+      tabs.forEach((tab) => {
+        tab.classList.remove('active');
+      });
+      tab.classList.add('active');
+      target.classList.add('active');
+    });
+  });
+}
