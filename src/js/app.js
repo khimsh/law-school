@@ -97,3 +97,24 @@ if (document.querySelectorAll('[data-tab-target]')) {
     });
   });
 }
+
+// filters
+if (document.querySelector('[data-filter]')) {
+  const filters = document.querySelectorAll('[data-filter]');
+
+  filters.forEach((filter) => {
+    const filterBtn = filter.querySelector('.filter__trigger');
+    const filterSelected = filter.querySelector('.filter__selected');
+
+    filter.addEventListener('click', (e) => {
+      if (e.target == filterBtn) {
+        filter.classList.toggle('active');
+      }
+
+      if (e.target.classList.contains('filter__option')) {
+        filterSelected.textContent = e.target.textContent;
+        filter.classList.remove('active');
+      }
+    });
+  });
+}

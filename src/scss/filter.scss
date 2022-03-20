@@ -1,0 +1,100 @@
+.filter {
+  position: relative;
+
+  color: hsl(0 0% 0%);
+  border-radius: 5px;
+  background-color: transparent;
+  transition: all 50ms ease-in-out;
+
+  &.active {
+    color: hsl(0 0% 100%);
+    background-color: #003b56;
+
+    .filter__content {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+
+    .fa-sort-down {
+      transform: rotate(180deg) translateY(-3px);
+    }
+  }
+
+  &__trigger {
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: inherit;
+    background-color: transparent;
+    border: 1px solid #003b56;
+    border-radius: 5px;
+
+    span {
+      color: inherit;
+    }
+  }
+
+  &__selected {
+    pointer-events: none;
+  }
+
+  &__content {
+    position: absolute;
+    margin: 0;
+    padding: 10px 20px;
+    background-color: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 0 0 5px 5px;
+    max-height: 170px;
+    overflow-y: auto;
+    z-index: 100;
+
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #003b56;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #04abf8;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #0088c7;
+    }
+  }
+
+  .fa-sort-down {
+    pointer-events: none;
+    transform: translateY(-3px);
+    transition: transform 150ms ease-in-out;
+  }
+
+  &__option {
+    font-family: firaGo, sans-serif;
+    font-size: 14px;
+    color: inherit;
+  }
+
+  input[type='date'] {
+    font-family: firaGO, sans-serif;
+  }
+}

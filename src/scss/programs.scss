@@ -142,12 +142,18 @@
   }
 
   &__filters {
-    display: flex;
+    width: 100%;
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
-    flex-wrap: wrap;
   }
 
   &__title {
+    flex-shrink: 0;
+
     position: relative;
     padding-top: 25px;
     margin-bottom: 40px;
