@@ -1,0 +1,56 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 100;
+
+  &.active {
+    display: block;
+  }
+
+  &__backdrop {
+    position: absolute;
+    inset: 0;
+    background-color: hsl(0 0% 0% / 0.4);
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+    width: min(100% - 2rem, 620px);
+    background-color: hsl(0 0% 100%);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-500);
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 20px;
+  }
+
+  &__content {
+  }
+}
+
+.register-program {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  &__title {
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: hsl(0 0% 0%);
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

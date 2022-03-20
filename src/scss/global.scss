@@ -219,14 +219,24 @@ body {
   font-family: mrgvlovaniCaps, sans-serif;
   font-size: 16px;
   color: hsl(0 0% 100%);
+  text-transform: uppercase;
   border-radius: 30px;
+  transition: background-color 150ms ease-in-out;
 
   &--blue {
     background-color: #003b56;
+
+    &:hover {
+      background-color: #062c3d;
+    }
   }
 
   &--orange {
     background-color: #dc7947;
+
+    &:hover {
+      background-color: #a13a06;
+    }
   }
 }
 

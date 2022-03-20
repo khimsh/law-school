@@ -37,8 +37,6 @@ const dropdowns = document.querySelectorAll('[data-dropdown]');
 window.addEventListener('click', (e) => {
   const dropdownClicked = e.target.parentNode;
 
-  console.log(dropdownClicked);
-
   if (dropdownClicked.classList.contains('dropdown')) return;
 
   dropdowns.forEach((dropdown) => closeDropdown(dropdown));
@@ -61,3 +59,19 @@ function openDropdown(dropdown) {
 function closeDropdown(dropdown) {
   dropdown.classList.remove('active');
 }
+
+// modal
+const modal = document.querySelector('[data-modal]');
+const backdrop = modal.querySelector('.modal__backdrop');
+const openModal = document.querySelector('[data-modal-open]');
+const closeModal = document.querySelector('[data-modal-close]');
+
+openModal.addEventListener('click', () => {
+  modal.classList.add('active');
+});
+closeModal.addEventListener('click', () => {
+  modal.classList.remove('active');
+});
+backdrop.addEventListener('click', () => {
+  modal.classList.remove('active');
+});

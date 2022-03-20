@@ -6,7 +6,7 @@
 }
 
 [data-dropdown] {
-  // &:hover,
+  &:hover,
   &.active {
     [data-dropdown-content] {
       opacity: 1;
