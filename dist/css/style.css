@@ -653,19 +653,6 @@ body {
   background-color: #dc7947;
 }
 
-[data-dropdown-content] {
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: top;
-  transition: all 150ms ease-in-out;
-}
-
-[data-dropdown]:hover [data-dropdown-content],
-[data-dropdown].active [data-dropdown-content] {
-  opacity: 1;
-  transform: scaleY(1);
-}
-
 .hero {
   width: 100%;
   height: 680px;
@@ -2647,6 +2634,106 @@ body {
   border-radius: 3px;
   background-color: transparent;
   border: 1px solid #707070;
+}
+
+.faqs {
+  padding: 48px 40px;
+  min-height: 50vh;
+  background-color: white;
+  box-shadow: var(--box-shadow-500);
+}
+
+.faqs__title {
+  margin-bottom: 30px;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: #003b56;
+  text-transform: uppercase;
+}
+
+.faq:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faq.active [data-dropdown-content] {
+  max-height: 1000px;
+  padding-top: 20px;
+}
+
+.faq.active .faq__question::after {
+  background-color: #003b56;
+}
+
+.faq.active .faq__question::before {
+  transform: scaleY(0);
+}
+
+.faq__question {
+  position: relative;
+  padding: 0;
+  padding-left: 34px;
+  width: 100%;
+  font-family: firaGo, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+}
+
+.faq__question::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 7px;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 20px;
+  background-color: #dc7947;
+  transition: transform 150ms ease-in-out;
+}
+
+.faq__question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 5px;
+  background-color: #dc7947;
+  transition: background-color 150ms ease-in-out;
+}
+
+.faq__answer {
+  padding-left: 34px;
+  font-family: firaGo, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+.faq__answer p {
+  font-size: inherit;
+}
+
+.faq [data-dropdown-content] {
+  max-height: 0;
+  padding-top: 0;
+}
+
+[data-dropdown-content] {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 150ms ease-in-out;
+}
+
+[data-dropdown].active [data-dropdown-content] {
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 @media (prefers-reduced-motion: reduce) {

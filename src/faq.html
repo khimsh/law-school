@@ -3,15 +3,31 @@
   @@include('html/head.html', { "title": "ხშირად დასმული კითხვები" })
   <body>
     @@include('html/header.html', {})
-    <main>
+    <main class="programs-decor">
       <div class="container">
         <div class="faqs">
-          <h1>ხშირად დასმული კითხვები</h1>
+          <h1 class="faqs__title">ხშირად დასმული კითხვები</h1>
 
-          <div class="faq">
-            <button class="faq__question" data-dropdown>
-              <div class="faq__icon"></div>
-              <span>როგორ დავრეგისტრირდე ტრენინგზე?</span>
+          <div class="faq dropdown" data-dropdown>
+            <button class="faq__question">
+              როგორ დავრეგისტრირდე ტრენინგზე?
+            </button>
+
+            <div class="faq__answer" data-dropdown-content>
+              <p>
+                შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და
+                ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად
+                მიახლოებული შაბლონი წარუდგინონ შემფასებელს. შემთხვევითად
+                გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+                ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+                წარუდგინონ შემფასებელს.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq dropdown" data-dropdown>
+            <button class="faq__question">
+              როგორ დავრეგისტრირდე ტრენინგზე?
             </button>
 
             <div class="faq__answer" data-dropdown-content>

@@ -1,0 +1,16 @@
+[data-dropdown-content] {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 150ms ease-in-out;
+}
+
+[data-dropdown] {
+  // &:hover,
+  &.active {
+    [data-dropdown-content] {
+      opacity: 1;
+      transform: scaleY(1);
+    }
+  }
+}
