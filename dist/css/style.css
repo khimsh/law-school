@@ -256,7 +256,8 @@ body {
 .faq-section__grid {
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 35px;
 }
 
@@ -557,6 +558,10 @@ body {
   top: calc(100% + 15px);
 }
 
+.nav__close {
+  display: none;
+}
+
 .auth-header {
   margin: 0;
   padding: 0;
@@ -707,7 +712,7 @@ body {
 
 .hero h2 {
   font-family: FiraGO, sans-serif;
-  font-size: 40px;
+  font-size: clamp(1.2rem, 1vw + 1rem, 2.5rem);
   font-weight: 400;
   max-width: 40ch;
   margin-left: auto;
@@ -1413,6 +1418,12 @@ body {
   border-radius: 30px;
   background: transparent;
   border: 1px solid white;
+  transition: all 150ms ease-in-out;
+}
+
+.program-calendar__btn:hover {
+  background-color: #ff9a67;
+  border-color: #ff9a67;
 }
 
 .banner {
@@ -2337,6 +2348,10 @@ body {
   justify-content: space-between;
 }
 
+.footer__logo {
+  margin-bottom: 40px;
+}
+
 .footer__subscribe {
   padding-bottom: 24px;
 }
@@ -2358,6 +2373,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .social {
@@ -2975,6 +2991,228 @@ body {
 
 .filter input[type=date] {
   font-family: firaGO, sans-serif;
+}
+
+@media (max-width: 1440px) {
+  .programs-section__actions {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .programs__grid {
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .programs__heading {
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 0;
+  }
+
+  .programs__filters {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .events__grid {
+    -ms-grid-columns: (minmax(0, 1fr))[3];
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1300px) {
+  .header__btn {
+    display: block;
+    background: transparent;
+    border: none;
+    display: block;
+    font-size: 24px;
+    color: white;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 40px;
+    background-color: #003b56;
+    min-height: 100vh;
+    z-index: 1000;
+    transition: all 150ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    opacity: 0;
+  }
+
+  .nav [data-dropdown],
+  .nav [data-dropdown-content] {
+    all: unset;
+  }
+
+  .nav.active {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav__item button {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav__close {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .auth-header {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .lang-header {
+    margin-right: 20px;
+  }
+
+  .dropdown-nav__link {
+    font-family: inherit;
+    color: white;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .calendar {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .news-section__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h2 {
+    white-space: normal;
+    word-break: break-all;
+    width: 100%;
+  }
+
+  .events__grid {
+    -ms-grid-columns: (minmax(0, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .analytics {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .partners__grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .partners .partner {
+    width: 100%;
+  }
+
+  .partners .partner:not(:last-child) {
+    margin-right: unset;
+  }
+
+  .partners .partner:not(:last-child)::before {
+    display: none;
+  }
+
+  .faq-section__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 22px;
+    padding-top: 20px;
+  }
+
+  .programs-section__actions {
+    margin: auto;
+    margin-top: 0px;
+  }
+
+  .programs-section__actions a {
+    margin-top: 0px;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .programs__grid {
+    -ms-grid-columns: minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .program-calendar__title {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .program-calendar__date {
+    font-size: 20px;
+    white-space: nowrap;
+  }
+
+  .program-calendar__time {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
+  .footer__bottom .container {
+    flex-direction: column;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .subscribe__form input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscribe__form button {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .events__grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .news-card__link {
+    flex-direction: column;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

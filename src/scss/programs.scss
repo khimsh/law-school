@@ -128,6 +128,13 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 50px;
+
+    @media (max-width: 1366px) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: minmax(0, 1fr);
+    }
   }
 
   .program {
@@ -139,16 +146,23 @@
   &__heading {
     display: flex;
     gap: 30px;
+
+    @media (max-width: 1366px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+      gap: 0;
+    }
   }
 
   &__filters {
     width: 100%;
-    // display: flex;
-    // justify-content: space-between;
-    // flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 25px;
+
+    @media (max-width: 1366px) {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
   }
 
   &__title {

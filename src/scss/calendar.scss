@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
+
   .section-title {
     position: absolute;
     top: 50px;
@@ -37,6 +41,11 @@
     font-family: mrgvlovaniCaps, sans-serif;
     font-size: 30px;
     color: hsl(0 0% 100%);
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      white-space: nowrap;
+    }
   }
 
   &__date {
@@ -44,6 +53,11 @@
     font-family: mrgvlovaniCaps, sans-serif;
     font-size: 30px;
     color: #ff9a67;
+
+    @media (max-width: 768px) {
+      font-size: 20px;
+      white-space: nowrap;
+    }
   }
 
   &__time {
@@ -51,6 +65,11 @@
     align-items: center;
     gap: 15px;
     color: #ffffff;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      white-space: nowrap;
+    }
 
     span {
       font-family: firaGo, sans-serif;
@@ -104,5 +123,11 @@
     border-radius: 30px;
     background: transparent;
     border: 1px solid hsl(0 0% 100%);
+    transition: all 150ms ease-in-out;
+
+    &:hover {
+      background-color: #ff9a67;
+      border-color: #ff9a67;
+    }
   }
 }

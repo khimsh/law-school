@@ -96,6 +96,10 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 35px;
 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
   a {
     width: 100%;
     height: 150px;
@@ -123,6 +127,11 @@ body {
   &__grid {
     display: flex;
     justify-content: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
 
   .partner {
@@ -130,9 +139,17 @@ body {
     height: 110px;
     border-radius: 5px;
 
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
     &:not(:last-child) {
       position: relative;
       margin-right: 76px;
+
+      @media (max-width: 768px) {
+        margin-right: unset;
+      }
 
       &::before {
         content: '';
@@ -142,6 +159,10 @@ body {
         height: 100%;
         width: 1px;
         background-color: #d5d5d5;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
 
@@ -161,8 +182,12 @@ body {
 
   &__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 35px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .faq-block {
@@ -263,6 +288,11 @@ body {
   color: hsl(0 0% 0%);
   text-align: center;
 
+  @media (max-width: 768px) {
+    font-size: 22px;
+    padding-top: 20px;
+  }
+
   &--blue {
     &::after {
       background-color: #003b56;
@@ -352,8 +382,19 @@ body {
     margin-left: auto;
     margin-right: calc((100vw - 86.125rem) / 2);
 
+    @media (max-width: 1440px) {
+      margin-right: 2rem;
+    }
+    @media (max-width: 768px) {
+      margin: auto;
+      margin-top: 0px;
+    }
+
     a {
       display: block;
+      @media (max-width: 768px) {
+        margin-top: 0px;
+      }
     }
   }
 }

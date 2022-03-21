@@ -11,6 +11,7 @@ import 'swiper/scss/pagination';
 Swiper.use([Pagination]);
 
 const heroSwiper = new Swiper('.hero__slider', {
+  slidesPerView: 1,
   speed: 1000,
   loop: true,
   pagination: {
@@ -20,14 +21,38 @@ const heroSwiper = new Swiper('.hero__slider', {
 });
 
 var coursesSwiper = new Swiper('.programs__slider', {
-  slidesPerView: 4,
-  spaceBetween: 35,
+  slidesPerView: 1,
+  spaceBetween: 10,
   initialSlide: 2,
   loop: true,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 640px
+    680: {
+      slidesPerView: 1.4,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 2.2,
+    },
+    // when window width is >= 1366px
+    1366: {
+      slidesPerView: 3,
+      spaceBetween: 35,
+    },
+    // when window width is >= 1920px
+    1920: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -118,3 +143,15 @@ if (document.querySelector('[data-filter]')) {
     });
   });
 }
+
+// navigation
+const nav = document.querySelector('.nav');
+const openNav = document.querySelector('[ data-nav-open]');
+const closeNav = document.querySelector('[ data-nav-close]');
+
+openNav.addEventListener('click', () => {
+  nav.classList.add('active');
+});
+closeNav.addEventListener('click', () => {
+  nav.classList.remove('active');
+});

@@ -19,6 +19,10 @@
     }
   }
 
+  &__logo {
+    margin-bottom: 40px;
+  }
+
   &__subscribe {
     padding-bottom: 24px;
   }
@@ -39,6 +43,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 20px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
     }
   }
 }
@@ -140,6 +149,11 @@
   align-items: center;
   gap: 20px;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   &__title {
     font-family: mrgvlovaniCaps, sans-serif;
     font-size: 16px;
@@ -162,6 +176,11 @@
       border: none;
       border-radius: 25px;
       //   transition: outline-color 150ms ease-in-out;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
 
       &::placeholder {
         font-family: FiraGO, sans-serif;
@@ -188,6 +207,11 @@
       border-radius: 25px;
       background-color: #ff9a67;
       transition: background-color 150ms ease-in-out;
+
+      @media (max-width: 768px) {
+        position: relative;
+        width: 100%;
+      }
 
       &:hover,
       &:focus {
