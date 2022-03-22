@@ -406,6 +406,10 @@
     font-weight: 400;
     color: hsl(0 0% 0%);
     text-transform: uppercase;
+
+    @media (max-width: 680px) {
+      margin-bottom: 10px;
+    }
   }
 
   &__info {
@@ -421,11 +425,19 @@
     flex-direction: column;
     gap: 20px;
 
+    @media (max-width: 680px) {
+      gap: 10px;
+    }
+
     p {
       font-family: mrgvlovaniCaps, sans-serif;
       font-size: 20px;
       color: #003b56;
       text-transform: uppercase;
+
+      @media (max-width: 680px) {
+        font-size: 16px;
+      }
     }
 
     div {
@@ -532,6 +544,10 @@
       font-family: firaGo, sans-serif;
       font-size: 18px;
       color: hsl(0 0% 0%);
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 
