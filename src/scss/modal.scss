@@ -45,6 +45,10 @@
   grid-template-columns: 1fr;
   gap: 20px;
 
+  &.hidden {
+    display: none;
+  }
+
   &__title {
     font-family: mrgvlovaniCaps, sans-serif;
     font-size: 20px;
@@ -52,5 +56,44 @@
     color: hsl(0 0% 0%);
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+.register-success {
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+
+  &.shown {
+    display: flex;
+  }
+
+  &__text {
+    font-family: firaGo, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(0 0% 0%);
+    line-height: 1.7;
+    text-align: center;
+  }
+
+  &__btn {
+    display: grid;
+    place-content: center;
+    height: 50px;
+    width: 100%;
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #003b56;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 150ms ease-in-out;
+
+    &:hover {
+      background-color: #dc7947;
+    }
   }
 }

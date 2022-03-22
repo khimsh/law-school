@@ -2929,6 +2929,10 @@ body {
   gap: 20px;
 }
 
+.register-program.hidden {
+  display: none;
+}
+
 .register-program__title {
   font-family: mrgvlovaniCaps, sans-serif;
   font-size: 20px;
@@ -2936,6 +2940,46 @@ body {
   color: black;
   text-transform: uppercase;
   text-align: center;
+}
+
+.register-success {
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.register-success.shown {
+  display: flex;
+}
+
+.register-success__text {
+  font-family: firaGo, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.register-success__btn {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  height: 50px;
+  width: 100%;
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #003b56;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 150ms ease-in-out;
+}
+
+.register-success__btn:hover {
+  background-color: #dc7947;
 }
 
 .filter {

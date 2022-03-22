@@ -89,17 +89,33 @@ function closeDropdown(dropdown) {
 if (document.querySelector('[data-modal]')) {
   const modal = document.querySelector('[data-modal]');
   const backdrop = modal.querySelector('.modal__backdrop');
-  const openModal = document.querySelector('[data-modal-open]');
+  const openModalBtns = document.querySelectorAll('[data-modal-open]');
   const closeModal = document.querySelector('[data-modal-close]');
 
-  openModal.addEventListener('click', () => {
-    modal.classList.add('active');
+  openModalBtns.forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      modal.classList.add('active');
+    });
   });
+
   closeModal.addEventListener('click', () => {
     modal.classList.remove('active');
   });
   backdrop.addEventListener('click', () => {
     modal.classList.remove('active');
+  });
+
+  // modal success
+  const registerForm = modal.querySelector('.register-program');
+  const successMsg = modal.querySelector('.register-success');
+
+  registerForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    registerForm.classList.add('hidden');
+    successMsg.classList.add('shown');
   });
 }
 
