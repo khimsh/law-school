@@ -3135,6 +3135,14 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .contact__wrapper {
+    flex-direction: column;
+  }
+
+  .contact__form {
+    flex: unset;
+  }
+
   .news-section__grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -3218,6 +3226,33 @@ body {
   .program-calendar__time {
     font-size: 18px;
     white-space: nowrap;
+  }
+
+  .contact {
+    padding-bottom: 50px;
+  }
+
+  .contact__title {
+    font-size: 22px;
+  }
+
+  .contact__form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .contact__form input[type=text],
+  .contact__form textarea {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+  }
+
+  .contact__footer {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
   }
 
   .footer__bottom .container {
