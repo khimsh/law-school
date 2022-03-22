@@ -7,7 +7,7 @@
   &__title {
     margin-bottom: 30px;
     font-family: mrgvlovaniCaps, sans-serif;
-    font-size: 30px;
+    font-size: clamp(1.2rem, 1vw + 1rem, 30px);
     font-weight: 400;
     color: #003b56;
     text-transform: uppercase;

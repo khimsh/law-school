@@ -2,6 +2,10 @@
   padding-block: 27px;
   background-color: #003b56;
 
+  @media (max-width: 992px) {
+    padding-block: 10px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -9,6 +13,14 @@
   }
 
   &__logo {
+    @media (max-width: 992px) {
+      height: 40px;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
 
   &__auth {
@@ -153,8 +165,18 @@
     margin-right: 20px;
   }
 
+  @media (max-width: 768px) {
+    margin-right: 10px;
+  }
+
   &__item {
     height: 100%;
+
+    &:first-child {
+      @media (max-width: 1200px) {
+        display: none;
+      }
+    }
   }
 
   &__link {
@@ -180,6 +202,10 @@
     margin-right: 20px;
   }
 
+  @media (max-width: 768px) {
+    margin-right: 10px;
+  }
+
   &__btn {
     background: transparent;
     border: none;
@@ -195,6 +221,10 @@
 
     span {
       font-size: 20px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 

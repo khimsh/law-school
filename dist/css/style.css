@@ -497,6 +497,11 @@ body {
   align-items: center;
 }
 
+.header__logo img {
+  height: 100%;
+  width: auto;
+}
+
 .header__btn {
   display: none;
 }
@@ -2775,7 +2780,7 @@ body {
 .faqs__title {
   margin-bottom: 30px;
   font-family: mrgvlovaniCaps, sans-serif;
-  font-size: 30px;
+  font-size: clamp(1.2rem, 1vw + 1rem, 30px);
   font-weight: 400;
   color: #003b56;
   text-transform: uppercase;
@@ -3187,6 +3192,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  .auth-header__item:first-child {
+    display: none;
+  }
+
   .hero {
     background-position: right;
   }
@@ -3250,6 +3259,14 @@ body {
 }
 
 @media (max-width: 992px) {
+  .header {
+    padding-block: 10px;
+  }
+
+  .header__logo {
+    height: 40px;
+  }
+
   .hero__divider {
     width: 80%;
   }
@@ -3319,6 +3336,18 @@ body {
 
   .programs-section__actions a {
     margin-top: 0px;
+  }
+
+  .auth-header {
+    margin-right: 10px;
+  }
+
+  .lang-header {
+    margin-right: 10px;
+  }
+
+  .lang-header__btn span {
+    font-size: 16px;
   }
 
   .hero p {
