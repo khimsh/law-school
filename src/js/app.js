@@ -155,3 +155,27 @@ openNav.addEventListener('click', () => {
 closeNav.addEventListener('click', () => {
   nav.classList.remove('active');
 });
+
+// accordion
+if (document.querySelector('[data-accordion]')) {
+  const accordions = document.querySelectorAll('[data-accordion]');
+
+  console.log(accordions);
+
+  accordions.forEach((dropdown) => {
+    const trigger = dropdown.querySelector('[data-trigger]');
+
+    trigger.addEventListener('click', function () {
+      const clickedItem = this.closest('[data-accordion]');
+
+      accordions.forEach((item) => {
+        if (clickedItem === item) {
+          clickedItem.classList.toggle('active');
+          return;
+        }
+
+        item.classList.remove('active');
+      });
+    });
+  });
+}

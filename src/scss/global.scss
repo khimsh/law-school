@@ -284,12 +284,13 @@ body {
   padding-top: 47px;
   margin-bottom: 40px;
   font-family: mrgvlovaniCaps, sans-serif;
-  font-size: 30px;
+  // font-size: 30px;
+  font-size: clamp(1.2rem, 1vw + 1rem, 30px);
   color: hsl(0 0% 0%);
   text-align: center;
 
   @media (max-width: 768px) {
-    font-size: 22px;
+    // font-size: 22px;
     padding-top: 20px;
   }
 
@@ -304,7 +305,9 @@ body {
     }
   }
   &--white {
+    width: 100%;
     color: hsl(0 0% 100%);
+
     &::before {
       background-color: #828282 !important;
     }

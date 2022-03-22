@@ -18,6 +18,10 @@
     background-image: url(../img/calendar-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (max-width: 1200px) {
+      height: 500px;
+    }
   }
 
   &__right {
@@ -28,6 +32,11 @@
     background-image: url(../img/calendar-decor.svg);
     background-repeat: no-repeat;
     background-position: bottom right;
+
+    @media (max-width: 1200px) {
+      padding-block: 40px;
+      padding-inline: 1rem;
+    }
   }
 
   &__program {
