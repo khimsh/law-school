@@ -5,6 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (max-width: 1200px) {
+    background-position: right;
+  }
+
   &__container,
   &__slider {
     height: 100%;
@@ -29,6 +33,10 @@
     margin-left: auto;
     background-color: hsl(0 0% 100%);
 
+    @media (max-width: 992px) {
+      width: 80%;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -37,6 +45,10 @@
       height: 100%;
       width: 220px;
       background-color: #a95939;
+
+      @media (max-width: 992px) {
+        width: 30%;
+      }
     }
   }
 
@@ -50,8 +62,9 @@
 
     @media (max-width: 992px) {
       white-space: normal;
-      word-break: break-all;
+      word-break: break-word;
       width: 100%;
+      max-width: unset;
     }
   }
 

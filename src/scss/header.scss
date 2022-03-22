@@ -266,3 +266,43 @@
     }
   }
 }
+
+.authorized {
+  margin: 0;
+  padding: 0 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  border: 1px solid #ffffff;
+  border-radius: 36px;
+
+  @media (max-width: 1300px) {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  &__user {
+    color: hsl(0 0% 100%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-family: mrgvlovaniCaps, sans-serif;
+      font-size: 10px;
+    }
+
+    i {
+      font-size: 10px;
+      transform: translateY(-1px);
+    }
+  }
+
+  &__logout {
+    font-size: 18px;
+    color: #dc7947;
+    background-color: transparent;
+    border: none;
+  }
+}
