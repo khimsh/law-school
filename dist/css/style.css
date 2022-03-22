@@ -2993,6 +2993,44 @@ body {
   font-family: firaGO, sans-serif;
 }
 
+.pagination {
+  margin-block: 50px;
+}
+
+.pagination__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.pagination__link {
+  font-family: mrgvlovaniCaps, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #003b56;
+  transition: color 150ms ease-in-out;
+}
+
+.pagination__link:hover,
+.pagination__link:active,
+.pagination__link.active {
+  color: #dc7947;
+}
+
+.pagination__arrow {
+  font-size: 24px;
+  color: #003b56;
+  transition: color 150ms ease-in-out;
+}
+
+.pagination__arrow:hover,
+.pagination__arrow:active {
+  color: #dc7947;
+}
+
 @media (max-width: 1440px) {
   .programs-section__actions {
     margin-right: 2rem;

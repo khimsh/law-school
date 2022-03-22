@@ -1,0 +1,37 @@
+.pagination {
+  margin-block: 50px;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+  }
+
+  &__link {
+    font-family: mrgvlovaniCaps, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #003b56;
+    transition: color 150ms ease-in-out;
+
+    &:hover,
+    &:active,
+    &.active {
+      color: #dc7947;
+    }
+  }
+
+  &__arrow {
+    font-size: 24px;
+    color: #003b56;
+    transition: color 150ms ease-in-out;
+
+    &:hover,
+    &:active {
+      color: #dc7947;
+    }
+  }
+}
